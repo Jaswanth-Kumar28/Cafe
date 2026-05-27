@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Luxury-Cafe/', // GitHub Pages repo name — change this if repo name changes
+  // Use /Luxury-Cafe/ for GitHub Pages, / for Vercel & local dev
+  base: process.env.GITHUB_PAGES === 'true' ? '/Luxury-Cafe/' : '/',
   server: {
     port: 5173
   },
