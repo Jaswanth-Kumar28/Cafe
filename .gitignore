@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+client/dist/
+server/dist/
+
+# Environment variables (keep secrets safe)
+.env
+.env.local
+.env.production
+client/.env
+server/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Vite cache
+client/.vite/
+
+# Editor
+.vscode/
+.idea/
+
+# Data (local dev only)
+server/data/db.json
